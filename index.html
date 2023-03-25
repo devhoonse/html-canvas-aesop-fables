@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>Aesop's Fables</title>
+  <meta charset="UTF-8">
+  <script src="js/jquery-1.12.0.min.js"></script>
+  <script src="js/json2.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="sound-toggle" class="sound sound-off"></div>
+<audio autoplay loop id="background-audio" class="my-audio">
+  <source type="audio/mpeg" src="sounds/bg.mp3">
+</audio>
+<div class="game-board" contenteditable="false"><!--메인 레이아웃-->
+  <h1 id="title" class="title">여우와 포도</h1><!--게임 화면 타이틀-->
+  <div id="game-scene" class="game-scene"></div><!--게임 신 뷰어-->
+  <div id="dialog-box" class="dialog-box"><!--여우 이미지와 시작 버튼-->
+    <div class="main-title">여우와 포도</div>
+    <img id="fox" alt="fox" src="images/fox.png" class="anime-swing">
+    <button id="button-start" class="btn btn-float btn-purple">
+      &nabla;시작&nabla;
+    </button>
+    <div class="clear"></div>
+  </div>
+</div><!--game board ends-->
+<script src="js/main.js"></script>
+</body>
+</html>
